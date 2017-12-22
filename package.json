@@ -1,0 +1,29 @@
+{
+  "name": "isvirtual",
+  "version": "1.0.3",
+  "description": "Utility to detect if Windows is running with Hardware Virtualization enabled",
+  "main": "isVirtual.js",
+  "scripts": {
+    "test": "mocha ./tests/index.js -qc",
+    "compile": "node-gyp configure build"
+  },
+  "keywords": [
+    "windows",
+    "virtualization",
+    "docker",
+    "bootcamp"
+  ],
+  "author": "Victor Algaze",
+  "license": "ISC",
+  "gypfile": true,
+  "bin": {
+    "isVirtual": "./bin/cli.js"
+  },
+  "devDependencies": {
+    "chai": "^4.1.0",
+    "mocha": "^4.0.1"
+  },
+  "engines": {
+    "node": ">=5.12"
+  }
+}
