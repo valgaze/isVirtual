@@ -1,6 +1,6 @@
 {
   "name": "isvirtual",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Utility to detect if Windows is running with Hardware Virtualization enabled",
   "main": "isVirtual.js",
   "scripts": {
