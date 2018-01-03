@@ -1,4 +1,12 @@
 #!/usr/bin/env node
+
+const args = process.argv.slice(2);
+
+if (args[0] && (args[0].toLowerCase() === '-v' || args[0].toLowerCase() === '--version')) {
+    const config = require('./../package.json');
+    return console.log(config.version);
+}
+
 const addOn = require('../build/Release/isvirtual.node');
 console.log(`Virtualization enabled: ${addOn.isVirtual() ? true : false}`);
 
