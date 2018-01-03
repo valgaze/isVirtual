@@ -2,10 +2,11 @@
   "name": "isvirtual",
   "version": "1.0.4",
   "description": "Utility to detect if Windows is running with Hardware Virtualization enabled",
-  "main": "isVirtual.js",
+  "main": "./dist/index.js",
   "scripts": {
     "test": "mocha ./tests/index.js -qc",
-    "compile": "node-gyp configure build"
+    "compile": "node-gyp configure build",
+    "babelify": "babel src/ -d dist/"
   },
   "keywords": [
     "windows",
@@ -15,15 +16,19 @@
   ],
   "author": "Victor Algaze",
   "license": "ISC",
-  "gypfile": true,
+  "gypfile": false,
   "bin": {
-    "isVirtual": "./bin/cli.js"
+    "isVirtual": "./dist/cli.js"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.9.0",
     "chai": "^4.1.0",
     "mocha": "^4.0.1"
   },
   "engines": {
     "node": ">=5.12"
-  }
+  },
+  "dependencies": {},
+  "os" : [ "!darwin", "!linux" ]
 }

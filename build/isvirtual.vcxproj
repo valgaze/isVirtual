@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{AE493392-3013-C2AB-B77A-58384B67B79C}</ProjectGuid>
+    <ProjectGuid>{CAD67C07-A3E0-1016-F447-940804527F6A}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>isvirtual</RootNamespace>
     <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>

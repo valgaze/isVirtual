@@ -1,7 +1,6 @@
 const chai = require('chai');
-const assert = chai.assert;
 const expect = chai.expect;
-const { isVirtual } = require('../isVirtual');
+const { isVirtual } = require('../src/');
 var addOn = require("../build/Release/isvirtual.node");
 
 

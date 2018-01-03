@@ -1,7 +1,6 @@
 #!/usr/bin/env node
-const addOn = require("../build/Release/isvirtual.node");
+const addOn = require('../build/Release/isvirtual.node');
 console.log(`Virtualization enabled: ${addOn.isVirtual() ? true : false}`);
-
 
 if (!addOn.isVirtual()) {
   console.log(`
